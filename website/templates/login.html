@@ -1,6 +1,23 @@
 {% extends "base.html" %}
 {% block title %} Login {% endblock %}
+
 {% block content %}
-<h1>This is the Login</h1>
-{{ text }}
+<div class="container w-50">
+<form method="post">
+    <h3 class="my-4">Login</h3>
+    <div class="form-group my-3">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email">
+
+    <div class="form-group my-3"">
+        <label for="password1">Password</label>
+        <input type="password1" class="form-control" id="password1" name="password1" placeholder="Enter Password">
+    </div>
+
+    <div>
+        <button class="btn btn-primary my-3" type="submit">Login</button>
+    </div>
+
+</form>
+</div>
 {% endblock %}
